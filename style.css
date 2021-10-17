@@ -1,0 +1,89 @@
+body{
+    margin:0px;
+    background-color:#bff;
+    font-family:Arial;
+    text-align:center;
+}
+
+.contentWrapper{
+    margin: 0 auto;
+    max-width:1000px;
+}
+
+.wrapper{
+    margin:10px;
+    background-color:#fff;
+    border-radius:2em;
+    padding:1em 1em;
+    min-height:90vh;
+    
+}
+.wrapper h1:first-child{
+    margin:10px;
+}
+
+.inputArea{
+    position:relative;
+    text-align:left;
+}
+
+.inputArea>input[type=text],
+.inputArea>input[type=password],
+.inputArea>input[type=button]{
+    display:inline-block;
+    box-sizing:border-box;
+    width:calc( 100% - 5em);
+    margin:0px;
+    padding: 0px;
+    font-size:1.6em;
+    padding: 0px 0.2em;
+}
+.inputArea>input[type=button]{
+    width:5em;
+}
+
+
+
+
+
+.popup{
+    display:inline-block;
+    padding:0.5em 1em;
+    border-radius:0.6em;
+    animation-timing-function: ease-out;
+}
+
+.accessDenied{
+    background-color:#ffb8b8;
+    border:solid 2px #ff2020;
+}
+.accessGranted{
+    background-color:#b8ffca;
+    border:solid 2px #20ff5a;
+}
+
+.popup.visible{
+    animation: 0.2s fade_in;
+}
+
+.popup.invisible{
+    display:none;
+}
+
+@keyframes fade_in {
+    from {
+        opacity:0;
+        padding: 0em 1em;
+    }
+    to {
+        opacity:1;
+        padding: 0.5em 1em;
+    }
+}
+
+.wrapper p{
+    text-align: left;
+    background-color:#eee;
+    padding: 1em 1em;
+    border-radius:0.5em;
+}
