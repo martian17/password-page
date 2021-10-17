@@ -44,7 +44,9 @@ body{
 
 
 
-
+.popuparea{
+    height:3em;
+}
 
 .popup{
     display:inline-block;
